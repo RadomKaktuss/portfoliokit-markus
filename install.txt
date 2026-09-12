@@ -1,0 +1,26 @@
+PortfolioKit — quick install & usage
+
+Files included:
+- index.html
+- style.css
+- README.md          (publishing instructions)
+- install.txt        (this file)
+- LICENSE            (MIT license)
+- thumbnail-landscape.svg  (for product page cover)
+- thumbnail-square.svg     (for gig image)
+
+How your buyer uses this template:
+1. Unzip the package to a folder on your computer.
+2. Edit index.html in any text editor (VS Code, Notepad, or the GitHub web editor):
+   - Replace NAME, BIO, SKILLS, PROJECT text and update the email in the contact section.
+3. Preview locally:
+   - Open index.html in your browser (double-click the file).
+4. Publish on GitHub Pages:
+   - Create a new GitHub repo and upload index.html and style.css.
+   - Settings → Pages → Select branch (main) and root (/) → Save.
+   - The site will be available at https://<username>.github.io/<repo>/
+5. Need help? Contact Markus at markus.hrica@gmail.com
+
+Notes for the buyer:
+- This is a one-page responsive template. You can change colors in style.css (see :root variables).
+- If you want a contact form, I can add Formspree setup as a paid extra.

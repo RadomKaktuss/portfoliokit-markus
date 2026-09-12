@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PortfolioKit — Generator</title>
+<meta name="description" content="Generate a personalized PortfolioKit zip in your browser"> 
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="gen-wrap">
+    <h1>PortfolioKit — Generator</h1>
+    <p class="muted">Fill the form below and click "Generate ZIP" — no server needed.</p>
+
+    <form id="genForm">
+      <label>Display name
+        <input name="name" placeholder="Markus" required>
+      </label>
+
+      <label>Short bio (1–2 sentences)
+        <input name="bio" placeholder="I build simple websites and help people get online quickly." required>
+      </label>
+
+      <label>Skills (comma separated)
+        <input name="skills" placeholder="HTML, CSS, JavaScript">
+      </label>
+
+      <label>Project title
+        <input name="projectTitle" placeholder="Personal portfolio">
+      </label>
+
+      <label>Project description
+        <input name="projectDesc" placeholder="The site you're looking at right now — built and published from scratch.">
+      </label>
+
+      <label>Contact email
+        <input name="email" type="email" placeholder="markus.hrica@gmail.com">
+      </label>
+
+      <label>Accent color
+        <input name="accent" type="color" value="#e8a33d">
+      </label>
+
+      <div class="row">
+        <button id="genBtn" type="button">Generate ZIP</button>
+        <button id="previewBtn" type="button">Preview</button>
+      </div>
+    </form>
+
+    <section id="preview" hidden>
+      <h2>Preview</h2>
+      <iframe id="previewFrame"></iframe>
+    </section>
+
+    <p class="muted small">The generated ZIP includes index.html and style.css ready for GitHub Pages.</p>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.0/dist/jszip.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
